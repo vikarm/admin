@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title><meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+	  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/metisMenu.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/c3.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/custom.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="left-menu">
+						<h3 class="text-center"> Admin </h3>
+						<ul class="metismenu" id="menu">
+							<li class="active">
+								<a href="#"> <i class="fa fa-dashboard fa-fw fa-lg"></i> &nbsp;Dashboard</a>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false"><i class="fa fa-bar-chart fa-fw fa-lg"></i>  &nbsp;Reports <i class="fa fa-angle-left fa-pull-right fa-lg text-white"></i></a>
+								<ul aria-expanded="true">
+									<li> <a href="#"> PHR Report</a></li>
+									<li> <a href="#"> Lab Reports 1</a></li>
+									<li> <a href="#"> Lab Reports 2</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false"> <i class="fa fa-th fa-fw fa-lg"></i> &nbsp;Pages<i class="fa fa-angle-left fa-pull-right fa-lg text-white"></i></a>
+								<ul aria-expanded="false">
+									<li> <a href="#"> Profile</a></li>
+									<li> <a href="#"> Family</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false"> <i class="fa fa-th fa-fw fa-lg"></i> &nbsp;Carousels<i class="fa fa-angle-left fa-pull-right fa-lg text-white"></i></a>
+								<ul aria-expanded="false">
+									<li> <a href="bootstrap-carousel.html"> Bootstrap</a></li>
+									<li> <a href="#"> Owl Carousel</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="right-content">
+						<nav class="navbar">
+							<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+									<form class="navbar-form navbar-left">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Search">
+										</div>
+									</form>
+								</div><!-- /.navbar-collapse -->
+							</div><!-- /.container-fluid -->
+						</nav>
+						<div class="row sec-1">
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="border-dark">
+									<div class="row">
+										<div class="col-sm-4 col-xs-4">
+											<h4 class="fa fa-users fa-3x text-green"></h4>
+											<h3 id="users" class="count">0</h3>
+										</div>
+										<div class="col-sm-8 col-xs-8 text-center">
+											<h5>no of Users</h5>
+											<h2 id="sparklines1"></h2>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="border-dark">	
+									<div class="row">
+										<div class="col-sm-4 col-xs-4">
+											<h4 class="fa fa-envelope fa-3x text-red"></h4>
+											<h3 id="comments" class="count">0</h3>
+										</div>
+										<div class="col-sm-8 col-xs-8 text-center">
+											<h5>no of comments</h5>
+											<h2 id="sparklines2"></h2>
+										</div>
+									</div>		
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="border-dark">		
+									<div class="row">
+										<div class="col-sm-4 col-xs-4">
+											<h4 class="fa fa-user-md fa-3x text-info"></h4>
+											<h3 id="doctors" class="count">0</h3>
+										</div>
+										<div class="col-sm-8 col-xs-8 text-center">
+											<h5>no of doctors</h5>
+											<h2 id="sparklines3"></h2>
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="border-dark">		
+									<div class="row">
+										<div class="col-sm-4 col-xs-4">
+											<h4 class="fa fa-edit fa-3x text-orange"></h4>
+											<h3 id="regs" class="count">0</h3>
+										</div>
+										<div class="col-sm-8 col-xs-8 text-center">
+											<h5>no of registrations</h5>
+											<h2 id="sparklines4"></h2>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-8">
+								<div class="border-dark">
+									<h4 class="heading"> Risk Profile</h4>
+									<canvas id="chart" width="400" height="150"></canvas>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="border-dark">
+									<h4 class="heading"> Risk Profile</h4>
+									<div class="center-block" id= "risk-chart" style="width:150px; height:150px; ">
+										<p style="display:none;">68%</p>
+									</div>
+								</div>
+								<div class="border-dark">
+									<h4 class="heading"> Risk Profile</h4>
+									<div class="center-block" id= "risk-chart1" style="width:150px; height:150px; ">
+										<p style="display:none;">68%</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="border-dark">
+									<h4 class="heading"> Schedular </h4>
+									<div id="schedule"></div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="border-dark">
+									<h4 class="heading"> Recent Visits </h4>
+									<div class="map" style="height:250px; width:100%;"></div>
+								</div>
+								<div class="border-dark" style="height:300px; width:100%;overflow-y:scroll;">
+									<div class="row">
+										<div class="col-sm-12">
+											<h4 class="heading"> Recent News </h4>
+											<br>
+											<ul class="list-unstyled">
+												<li>
+													<h5 class="text-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+													<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+													<hr>
+												</li>
+												<li>
+													<h5 class="text-red">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+													<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+													<hr>
+												</li>
+												<li>
+													<h5 class="text-orange">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+													<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+													<hr>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/metisMenu.min.js"></script>
+		<script type="text/javascript" src="js/countUp.min.js"></script>
+		<script type="text/javascript" src="js/raphael-min.js"></script>
+		<script type="text/javascript" src="js/jQuery.circleProgressBar.min.js"></script>
+		<script type="text/javascript" src="js/jquery.sparkline.min.js"></script>
+		<script type="text/javascript" src="js/moment.min.js"></script>
+		<script type="text/javascript" src="js/fullcalendar.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA00MrydHYm7GlxR93aCo3ImRivkpCRU_o&region=GB"></script>
+		<script type="text/javascript" src="js/gmap3.min.js"></script>	
+		<script type="text/javascript" src="js/Chart.min.js"></script>	
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="js/dashboard.js"></script>
+	</body>
+	</html>

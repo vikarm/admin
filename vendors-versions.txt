@@ -1,0 +1,18 @@
+metismenu-2.4.2
+font-awesome-4.7
+bootstrap-3.3.7
+jquery-1.12.3
+jquery-sparkline-2.1.2
+countup-1.8.1
+c3-charts-0.4.11
+d3js-4.4.2
+full-calendar- 3.1.0
+moment.js-2.15.0
+gmap3- 7.2.0
+jquery-easy-pie-chart - 2.1.6
+owl carousel 2- 2.2.0
+animate.css - 3.5.1
+jquery-steps - 1.1.0
+jquery.bootstrap.wizard - 1.0
+acc-wizard.min
+datedropper.min

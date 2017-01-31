@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+body{
+	background:#efefef;
+	font-size:14px;
+	color:#5f5f5f;
+	font-family: 'Roboto', sans-serif;
+	min-height:600px;
+}
+.wrapper{
+	width:100%;
+	overflow:hidden;
+	display:block;
+}
+h1, h2, h3, h4{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*left-menu css*/
+.left-menu{	
+	background:#22313F;
+	color:#f5f5f5;
+	width:270px;/*
+	min-height:800px;
+	height:100%;*/
+	padding:10px;
+	float:left;
+}
+.left-menu h3{
+	border-bottom:1px solid #000;
+	padding:0 10px 20px;
+}
+.metismenu{
+	background:#22313F;
+	color:#f5f5f5;
+	list-style: none;
+	padding-left:0;
+	float:left;
+	width:100%;
+}
+.metismenu ul{
+	list-style:none;
+	background:#2C3E50;
+	padding-left:0;
+}
+.metismenu ul > li{
+	border-bottom:1px solid #333;
+	padding-left:25px;
+}
+.metismenu li a{
+	padding:15px;
+	margin-left:20px;
+}
+.metismenu li>a{
+	text-decoration: none;
+	color:#f5f5f5;
+	display:block;
+}
+
+/*right content css*/
+.right-content{
+	float:right;
+	width:calc(100% - 270px);
+	overflow: hidden;
+	display:block;
+	padding:15px;
+}
+.border-dark{
+	border:1px solid #ced0d2;
+	border-radius:5px;
+	padding:15px;
+	margin-bottom:10px;
+}
+.text-green{
+	color:#32a56d;
+}
+.text-red{
+	color:#ef6f6c;
+}
+.text-info{
+	color:#0cb596;
+}
+.text-orange{
+	color:#ff8218;
+}
+.text-white{
+	color:#fff;
+}
+.bg-green{
+	background-color:#32a56d;
+}
+.bg-red{
+	background-color:#ef6f6c;
+}
+.bg-info{
+	background:#0cb596;
+}
+.bg-orange{
+	background-color:#ff8218;
+}
+.right-content > .row{
+	margin-bottom:15px;
+}
+.pad0{
+	padding:0 !important;
+}
+hr{
+	border-color:#22313F;
+}
+
+/*dashboard css*/
+.sec-1 h3{
+	margin-top:0;
+}
+#chart .c3-line {
+	stroke-width: 3px;
+}
+.navbar-form.navbar-left .form-control{
+	background-color: transparent
+}
+.fc-unthemed td.fc-today{
+	background: #22313F;
+	color:#fff;
+}
+.border-dark h4.heading{
+	width:130px;
+	border-bottom:1px solid #888686;
+	color:#888686;
+	font-size:16px;
+}
+#sparklines1, #sparklines2, #sparklines3, #sparklines4{
+	width:100px;
+	margin-right:0 !important;
+	margin-left:2em;
+}
+#sparklines1 canvas, #sparklines2 canvas, #sparklines3 canvas, #sparklines4 canvas{
+	width:100% !important;
+}
+@media(max-width: 768px){
+	.left-menu{
+		display:none;
+	}
+	.right-content{
+		width:100%;
+		margin-left:0;
+	}
+	
+}
+@media(max-width: 1010px){
+	#sparklines1, #sparklines2, #sparklines3, #sparklines4{
+		margin-left:1.3em;
+	}
+}

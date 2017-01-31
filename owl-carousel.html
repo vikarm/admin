@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Owl Carousel | Admin</title><meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+	  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/metisMenu.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/animate.css">
+	  <link rel="stylesheet" type="text/css" href="css/custom.css">
+	  <!-- <link rel="stylesheet" type="text/css" href="css/carousel.css"> -->
+	  <style>
+	  	/*.owl-carousel .item > img{
+	  		width:100%;
+	  		height:450px;
+	  	}*/
+	  	
+	  	#sync1 .item {
+	  		margin: 5px;
+	  		color: #FFF;
+	  		-webkit-border-radius: 3px;
+	  		-moz-border-radius: 3px;
+	  		border-radius: 3px;
+	  		text-align: center;
+	  	}
+
+	  	#sync2 .item {
+	  		margin: 5px;
+	  		color: #FFF;
+	  		-webkit-border-radius: 3px;
+	  		-moz-border-radius: 3px;
+	  		border-radius: 3px;
+	  		text-align: center;
+	  		cursor: pointer;
+	  		height: 150px
+	  	}
+	  	#sync2 .item h1 {
+	  		font-size: 18px;
+	  	}
+	  	#sync2 .current .item{
+	  		background: #0c83e7;
+	  	}
+
+	  	.owl-theme .item > img{
+	  		height: 900px;
+	  	}
+	  	/*default owl-theme theme reset .disabled:hover links */
+	  	.owl-theme .owl-nav [class*='owl-'] {
+	  		transition: all .3s ease;
+	  		background:transparent;
+	  		color:#999;
+	  	} 
+	  	.owl-theme .owl-nav [class*='owl-']:hover {
+	  		background:transparent;
+	  	} 
+	  	//arrows on first carousel
+	  	#sync1.owl-theme {
+	  		position: relative;
+	  	}
+	  	#sync1.owl-theme .owl-next,#sync1.owl-theme .owl-prev {
+	  		width: 22px;
+	  		height: 40px;
+	  		margin-top: -20px;
+	  		position: absolute;
+	  		top: 50%;
+	  	}
+	  	.owl-prev {
+	  		left: 10px;
+	  	}
+	  	.owl-next {
+	  		right: 10px;
+	  	}
+	  </style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="left-menu">
+						<h3 class="text-center"> Admin </h3>
+						<ul class="metismenu" id="menu">
+							<li>
+								<a href="#"> <i class="fa fa-dashboard fa-fw fa-lg"></i> &nbsp;Dashboard</a>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false"><i class="fa fa-bar-chart fa-fw fa-lg"></i>  &nbsp;Reports <i class="fa fa-angle-left fa-pull-right fa-lg text-white"></i></a>
+								<ul aria-expanded="true">
+									<li> <a href="#"> PHR Report</a></li>
+									<li> <a href="#"> Lab Reports 1</a></li>
+									<li> <a href="#"> Lab Reports 2</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false"> <i class="fa fa-th fa-fw fa-lg"></i> &nbsp;Pages<i class="fa fa-angle-left fa-pull-right fa-lg text-white"></i></a>
+								<ul aria-expanded="false">
+									<li> <a href="#"> Profile</a></li>
+									<li> <a href="#"> Family</a></li>
+								</ul>
+							</li>
+							<li class="active">
+								<a href="#" aria-expanded="true"> <i class="fa fa-th fa-fw fa-lg"></i> &nbsp;Carousels<i class="fa fa-angle-left fa-pull-right fa-lg text-white"></i></a>
+								<ul aria-expanded="true">
+									<li> <a href="bootstrap-carousel.html"> Bootstrap</a></li>
+									<li class="active"> <a href="owl-carousel.html"> Owl Carousel</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false"> <i class="fa fa-th fa-fw fa-lg"></i> &nbsp;Wizards<i class="fa fa-angle-left fa-pull-right fa-lg text-white"></i></a>
+								<ul aria-expanded="false">
+									<li> <a href="wizard.html"> Jquery Wizard1</a></li>
+									<li> <a href="#"> Jquery Wizard2</a></li>
+								</ul>
+							</ul>
+						</div>
+						<div class="right-content">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="border-dark">
+										<h4 class="heading"> Basic Carousel </h4>
+										<div class="owl-carousel owl-theme" id="basic">
+											<div class="item"> 
+												<img src="img/gallery/balancing.jpg" alt="img1" class="img-responsive">
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/photographer.jpg" alt="img2" class="img-responsive">
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/roznowskie.jpg" alt="img3" class="img-responsive"> 
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/gangster.jpg" alt="img4" class="img-responsive">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="border-dark">
+										<h4 class="heading"> Animated Carousel </h4>
+										<div class="owl-carousel owl-theme" id="custom1">
+											<div class="item"> 
+												<img src="img/gallery/balancing.jpg" alt="img1" class="img-responsive">
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/photographer.jpg" alt="img2" class="img-responsive">
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/roznowskie.jpg" alt="img3" class="img-responsive"> 
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/gangster.jpg" alt="img4" class="img-responsive">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="border-dark">
+										<h4 class="heading"> Cyclic Carousel </h4>
+										<div class="owl-carousel owl-theme" id="custom2">
+											<div class="item"> 
+												<img src="img/gallery/balancing.jpg" alt="img1" class="img-responsive">
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/photographer.jpg" alt="img2" class="img-responsive">
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/roznowskie.jpg" alt="img3" class="img-responsive"> 
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/gangster.jpg" alt="img4" class="img-responsive">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>						
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="border-dark">
+										<h4 class="heading"> Multiple Carousel Sync </h4>
+										<div id="sync1" class="owl-carousel owl-theme">
+											<div class="item"> 
+												<img src="img/gallery/1.jpg" alt="img1" class="img-responsive">
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/2.jpg" alt="img2" class="img-responsive">
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/3.jpg" alt="img3" class="img-responsive"> 
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/gangster.jpg" alt="img4" class="img-responsive">
+											</div>
+										</div>
+										<div id="sync2" class="owl-carousel owl-theme">
+											<div class="item"> 
+												<img src="img/gallery/1.jpg" alt="img1" class="img-responsive">
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/2.jpg" alt="img2" class="img-responsive">
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/3.jpg" alt="img3" class="img-responsive"> 
+											</div>
+											<div class="item"> 
+												<img src="img/gallery/gangster.jpg" alt="img4" class="img-responsive">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="js/metisMenu.min.js"></script>
+			<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+			<script type="text/javascript" src="js/custom.js"></script>
+			<script>
+				$(document).ready(function(){
+					$('#basic').owlCarousel({
+						items:1,
+						autoplay:false,
+						autoplayTimeout:5000,
+						autoplayHoverPause:false
+					});
+					$('#custom1').owlCarousel({
+						animateOut: 'slideOutDown',
+						animateIn: 'flipInX',
+						items:1,
+						margin:30,
+						stagePadding:30,
+						smartSpeed:450
+					});
+					$('#custom2').owlCarousel({
+						items:1,
+						loop:true
+					});
+
+					var sync1 = $("#sync1");
+					var sync2 = $("#sync2");
+					var slidesPerPage = 4; //globaly define number of elements per page
+					var syncedSecondary = true;
+
+					sync1.owlCarousel({
+						items : 1,
+						slideSpeed : 2000,
+						nav: true,
+						autoplay: true,
+						dots: false,
+						loop: true,
+						responsiveRefreshRate : 200,
+						navText: ['<i class="fa fa-angle-left fa-4x"></i>', '<i class="fa fa-angle-right fa-4x"></i>'],
+					}).on('changed.owl.carousel', syncPosition);
+
+					sync2
+					.on('initialized.owl.carousel', function () {
+						sync2.find(".owl-item").eq(0).addClass("current");
+					})
+					.owlCarousel({
+						items : slidesPerPage,
+						dots: true,
+						nav: true,
+						smartSpeed: 200,
+						slideSpeed : 500,
+					    slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+					    responsiveRefreshRate : 100
+					}).on('changed.owl.carousel', syncPosition2);
+
+					function syncPosition(el) {
+					    //if you set loop to false, you have to restore this next line
+					    //var current = el.item.index;
+					    
+					    //if you disable loop you have to comment this block
+					    var count = el.item.count-1;
+					    var current = Math.round(el.item.index - (el.item.count/2) - .5);
+
+					    if(current < 0) {
+					    	current = count;
+					    }
+					    if(current > count) {
+					    	current = 0;
+					    }
+
+    					//end block
+
+    					sync2
+    					.find(".owl-item")
+    					.removeClass("current")
+    					.eq(current)
+    					.addClass("current");
+    					var onscreen = sync2.find('.owl-item.active').length - 1;
+    					var start = sync2.find('.owl-item.active').first().index();
+    					var end = sync2.find('.owl-item.active').last().index();
+
+    					if (current > end) {
+    						sync2.data('owl.carousel').to(current, 100, true);
+    					}
+    					if (current < start) {
+    						sync2.data('owl.carousel').to(current - onscreen, 100, true);
+    					}
+    				}
+
+    				function syncPosition2(el) {
+    					if(syncedSecondary) {
+    						var number = el.item.index;
+    						sync1.data('owl.carousel').to(number, 100, true);
+    					}
+    				}
+
+    				sync2.on("click", ".owl-item", function(e){
+    					e.preventDefault();
+    					var number = $(this).index();
+    					sync1.data('owl.carousel').to(number, 300, true);
+    				});
+    			});
+    		</script>
+    	</body>
+    	</html>
