@@ -41,27 +41,29 @@
 
 .fraction-slider .prev,
 .fraction-slider .next{
-	display:none;
-	position:absolute;
+	display:block;
+	position:relative;
 	width:45px; height:45px;
 	z-index:9999;
 }
 
-.fraction-slider .prev{
+.fraction-slider .prev:before{
 	left:10px; top:45%;
-	background:url(images/fs.prevnext.png) 0px 0px no-repeat transparent;
+	position:absolute;
+	content: "\f104"; /*<--- this is your text. You can also use UTF-8 character codes as I do here-->*/
+	font-family: 'FontAwesome';
+	color:#000;
+	font-size: 45px;
 	
 }
-.fraction-slider .prev:hover{
-	background:url(images/fs.prevnext.png) 0px -45px no-repeat transparent;
-}
 
-.fraction-slider .next{
+.fraction-slider .next:before{
 	right:10px; top:185px;
-	background:url(images/fs.prevnext.png) -45px 0px no-repeat transparent;
-}
-.fraction-slider .next:hover{
-	background:url(images/fs.prevnext.png) -45px -45px no-repeat transparent;
+	position:absolute;
+	content: "\f105"; /*<--- this is your text. You can also use UTF-8 character codes as I do here-->*/
+	font-family: 'FontAwesome';
+	color:#000;
+	font-size: 45px;
 }
 
 .fraction-slider:hover .prev,
