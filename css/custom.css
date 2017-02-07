@@ -14,7 +14,10 @@ body{
 h1, h2, h3, h4{
 	font-family: 'Montserrat', sans-serif;
 }
-
+a, a:hover, a:focus, a:active{
+	outline:none;
+	color:transparent;
+}
 /*left-menu css*/
 .left-menu{	
 	background:#22313F;
@@ -39,8 +42,10 @@ h1, h2, h3, h4{
 }
 .metismenu ul{
 	list-style:none;
-	background:#2C3E50;
 	padding-left:0;
+}
+.metismenu ul > li.active{
+	background:#2C3E50;
 }
 .metismenu ul > li{
 	border-bottom:1px solid #333;
@@ -55,7 +60,6 @@ h1, h2, h3, h4{
 	color:#f5f5f5;
 	display:block;
 }
-
 /*right content css*/
 .right-content{
 	float:right;
