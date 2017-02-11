@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Owl Carousel | Admin</title><meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+	  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	  <style>
+	  	/*.gallery .sec1 h1, .gallery .sec2 h1{
+	  		position:absolute;
+	  		top:0;
+	  	}
+	  	
+	  	.gallery .sec1{
+	  		background: url('img/gallery/2.jpg') no-repeat;
+	  		width:100%;
+	  		height:600px;
+	  	}
+
+	  	.gallery .sec1:hover{
+	  		background: url('img/gallery/3.jpg') no-repeat;
+	  		width:100%;
+	  		height:600px;
+	  	}
+	  	.gallery .sec1:hover .text1, .gallery .sec1 .text2{
+	  		display:none;
+	  	}
+	  	.gallery .sec1:hover .text2, .gallery .sec1 .text1{
+	  		display:block;
+	  	}*/
+
+	  	ul > .gallery2{
+	  		position:relative;
+	  		top:150px;
+	  	}
+	  	.gallery2 .sec1 h1, .gallery2 .sec2 h1{
+	  		position:absolute;
+	  		top:0;
+	  	}
+	  	
+	  	.gallery2 .sec1{
+	  		/*background: url('img/gallery/2.jpg') no-repeat;*/
+	  		width:150px;
+	  		height:200px;
+	  	}
+
+	  	
+	  	
+	  </style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="list-inline">
+						<li>
+							<div class="gallery2">
+								<div class="sec1">
+									<img src="img/gallery/2.jpg" class="img-responsive img1">
+									<h1 class="text1"> First Title</h1>				
+									<img src="img/gallery/3.jpg" class="img-responsive img2">
+									<h1 class="text2"> Second Title</h1>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="gallery2">
+								<div class="sec1">
+									<img src="img/gallery/2.jpg" class="img-responsive img1">
+									<h1 class="text1"> First Title</h1>				
+									<img src="img/gallery/3.jpg" class="img-responsive img2">
+									<h1 class="text2"> Second Title</h1>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="gallery2">
+								<div class="sec1">
+									<img src="img/gallery/2.jpg" class="img-responsive img1">
+									<h1 class="text1"> First Title</h1>				
+									<img src="img/gallery/3.jpg" class="img-responsive img2">
+									<h1 class="text2"> Second Title</h1>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="gallery2">
+								<div class="sec1">
+									<img src="img/gallery/2.jpg" class="img-responsive img1">
+									<h1 class="text1"> First Title</h1>				
+									<img src="img/gallery/3.jpg" class="img-responsive img2">
+									<h1 class="text2"> Second Title</h1>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="gallery2">
+								<div class="sec1">
+									<img src="img/gallery/2.jpg" class="img-responsive img1">
+									<h1 class="text1"> First Title</h1>				
+									<img src="img/gallery/3.jpg" class="img-responsive img2">
+									<h1 class="text2"> Second Title</h1>
+								</div>
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+
+				<script type="text/javascript" src="js/jquery.min.js"></script>
+				<script type="text/javascript" src="js/bootstrap.min.js"></script>
+				<script>
+					$(document).ready(function(){			
+
+						$(".gallery2").find(".sec1 .img2").hide();
+						$(".gallery2").find(".sec1 .text2").hide();	
+						$(".gallery2").hover(function(){
+							$(this).find(".sec1 .img1").hide();
+							$(this).find(".sec1 .img2").show();
+							$(this).find(".sec1 .text1").hide();	
+							$(this).find(".sec1 .text2").show();	
+						},function(){							
+							$(this).find(".sec1 .img1").show();
+							$(this).find(".sec1 .img2").hide();
+							$(this).find(".sec1 .text2").hide();
+							$(this).find(".sec1 .text1").show();		
+						})							
+					});
+				</script>
+			</body>
+			</html>
